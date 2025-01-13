@@ -104,7 +104,13 @@ export function Intro() {
                     <IconLink href="https://github.com/kaniecko" icon={GitHubIcon} className="flex-none" target="_blank" rel="noopener noreferrer">
                         Github
                     </IconLink>
-                    <IconLink href="#" icon={MyResumeIcon} className="flex-none">
+                    <IconLink
+                        href="/Kacper-Aniecko-Resume.pdf"
+                        icon={MyResumeIcon}
+                        className="flex-none"
+                        download="Kacper-Aniecko-Resume.pdf"
+                        target="_blank"
+                    >
                         Resume
                     </IconLink>
                 </div>
