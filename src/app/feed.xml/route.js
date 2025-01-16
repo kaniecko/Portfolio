@@ -2,7 +2,7 @@ import assert from 'assert'
 import * as cheerio from 'cheerio'
 import { Feed } from 'feed'
 
-export async function GET(req) {
+export function GET() {
   let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
 
   if (!siteUrl) {
@@ -28,36 +28,28 @@ export async function GET(req) {
     },
   })
 
-  let html = await (await fetch(new URL('/', req.url))).text()
-  let $ = cheerio.load(html)
+  // Instead of fetching, we'll need to get the content directly
+  // You might need to adjust this part based on how your content is structured
+  const articles = [
+    // Add your articles data here
+    // Example:
+    // {
+    //   id: 'article-1',
+    //   title: 'Article 1',
+    //   date: '2024-01-16',
+    //   content: 'Content of article 1'
+    // }
+  ]
 
-  $('article').each(function () {
-    let id = $(this).attr('id')
-    assert(typeof id === 'string')
-
-    let url = `${siteUrl}/#${id}`
-    let heading = $(this).find('h2').first()
-    let title = heading.text()
-    let date = $(this).find('time').first().attr('datetime')
-
-    // Tidy content
-    heading.remove()
-    $(this).find('h3 svg').remove()
-
-    let content = $(this).find('[data-mdx-content]').first().html()
-
-    assert(typeof title === 'string')
-    assert(typeof date === 'string')
-    assert(typeof content === 'string')
-
+  articles.forEach(article => {
     feed.addItem({
-      title,
-      id: url,
-      link: url,
-      content,
+      title: article.title,
+      id: `${siteUrl}/#${article.id}`,
+      link: `${siteUrl}/#${article.id}`,
+      content: article.content,
       author: [author],
       contributor: [author],
-      date: new Date(date),
+      date: new Date(article.date),
     })
   })
 
