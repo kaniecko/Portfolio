@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
       className={clsx('h-full antialiased', inter.variable, monaSans.variable)}
       suppressHydrationWarning
     >
-      <body className="flex min-h-full flex-col bg-white dark:bg-gray-950">
+      <body className="flex min-h-full flex-col bg-white dark:bg-[#18181b] sm:w-full md:w-full">
         <Providers>{children}</Providers>
       </body>
     </html>

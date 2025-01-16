@@ -25,11 +25,10 @@ function Timeline() {
 
 function FixedSidebar({ main, footer }) {
     return (
-        <div className="relative flex-none overflow-hidden px-6 lg:pointer-events-none lg:fixed lg:inset-0 lg:z-40 lg:flex lg:px-0">
-
-            <div className="relative flex w-full lg:pointer-events-auto lg:mr-[calc(max(2rem,50%-38rem)+52rem)] lg:min-w-[24rem] lg:overflow-y-auto lg:overflow-x-hidden lg:pl-[max(4rem,calc(50%-42rem))]">
-                <div className="mx-auto max-w-lg lg:mx-0 lg:flex lg:w-full lg:max-w-none lg:flex-col lg:before:flex-1 lg:before:pt-6">
-                    <div className="pb-16 pt-20 sm:pb-20 sm:pt-32 lg:py-20">
+        <div className="relative flex-none overflow-hidden w-full lg:pointer-events-none lg:fixed lg:inset-0 lg:z-40 lg:flex">
+            <div className="relative flex w-full justify-center lg:pointer-events-auto lg:mr-[calc(max(2rem,50%-38rem)+45rem)] lg:min-w-[24rem]">
+                <div className="w-full max-w-2xl mx-auto lg:mx-0 lg:flex lg:max-w-none lg:flex-col lg:before:flex-1 lg:before:pt-6">
+                    <div className="pb-16 pt-10 sm:pb-20 sm:pt-32 lg:pt-0 lg:pb-10 w-full">
                         <div className="relative">
                             {main}
                         </div>
@@ -42,7 +41,6 @@ function FixedSidebar({ main, footer }) {
         </div>
     )
 }
-
 export function Layout({ children }) {
   return (
     <>
