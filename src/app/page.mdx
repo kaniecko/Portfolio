@@ -8,11 +8,36 @@ export { Layout as default } from '@/components/Layout'
 
 ## TalentCraft Portal {{ date: '2023-05-06T00:00Z' }}
 
+The TalentCraft Portal is a web application that streamlines and organizes the TalentCraft team's daily operations. It integrates with multiple platforms including Bullhorn Staffing software, BusinessCentral, and LightCast data, while also utilizing their in-house scraper (TalentCraft Worker) for job postings and articles.
+
+The portal manages the team's activities through features like a PTO system, data visualization tools, and a job tracker. It connects directly to their company website, enabling the team to create job postings, publish articles, and manage file uploads. The portal also handles email communications with applicants who submit through the TalentCraft Website, creating a more efficient workflow for their content management and applicant tracking.
+
+Built using the Symfony Framework, PHP, VanillaJS, Twig, Doctrine ORM, and Tailwind CSS, the application is architected on AWS utilizing EC2, RDS, S3, CloudFront, Route53, SES, and CloudWatch services.
+
+---
+
+![]( src/images/commit-suggestions.png)
+
+## Talent Craft Worker Server{{ date: '2023-05-06T00:00Z' }}
+
+The TalentCraft Worker is a custom web scraper that collects job postings from various recruitment sites and industry websites. It uses RSS feeds to gather data about upcoming construction and infrastructure projects across the United States.
+This system helps TalentCraft grow their recruiting business by spotting new opportunities and market trends. The worker organizes all the collected data, helping the team find potential clients and candidates for emerging projects. Through regular
+data collection and processing, the TalentCraft Worker provides a steady flow of market information to support the company's growth.
+
+Built with Symfony and PHP, this backend-only application runs in a worker environment to handle the continuous data collection.
+The system uses AWS services like EC2, RDS and CloudWatch to ensure reliable operation.
+
 ---
 
 ![]( src/images/commit-suggestions.png)
 
 ## Talent Craft Website{{ date: '2023-05-06T00:00Z' }}
+
+The TalentCraft website is a custom-built platform that serves as the public face of the TalentCraft recruiting company. It provides detailed information about the company, its services, and its team, while featuring a
+comprehensive job board for potential candidates. Job seekers can also submit their resumes directly through the platform to be included in TalentCraft's talent pool for future opportunities. The website showcases the company's
+expertise in technology, life sciences, and engineering industries through a user-friendly and informative design.
+
+Built using Next.js, TypeScript, and Tailwind CSS, and hosted on AWS Elastic Beanstalk, the website delivers a responsive and accessible experience across all devices.
 
 ---
 
@@ -20,11 +45,23 @@ export { Layout as default } from '@/components/Layout'
 
 ## Talent Craft Job Tracker{{ date: '2023-05-06T00:00Z' }}
 
+The TalentCraft Job Tracker is a web application that is designed to help sell the TalentCraft recruiting services to potential clients. It provides a comprehensive overview of the job market, including the number of open positions, the number of candidates, and the average time to fill a position. The application also includes a variety of charts and graphs to help users visualize the data.
+The site features a map of hotspots that the TalentCraft team has identified as high-demand areas for technology, life sciences and engineering jobs. Users can also filter the data by location, industry, and job title to get a more detailed view of the job market.
+
+Created using Next.js, TypeScript, and Tailwind CSS, and hosted on AWS Elastic Beanstalk and using services like RDS, S3, CloudFront, and CloudWatch, the application provides a fast and reliable user experience.
+
 ---
 
 ![]( src/images/commit-suggestions.png)
 
 ## C4 Human Resources Information System {{ date: '2023-05-06T00:00Z' }}
+
+The C4 Human Resources Information System (HRIS) is a web application that provides a comprehensive solution for managing employee data, payroll, and benefits. The system streamlines HR processes by managing all aspects of the employee lifecycle, from
+recruitment to retirement. Key features include applicant tracking, onboarding, performance management, and a self-service portal where employees can access their information and manage benefits. The platform also includes tools for creating questionnaires,
+conducting performance reviews, and tracking employee certifications and training requirements. The system also includes a variety of reports and analytics to help HR professionals make data-driven decisions.
+
+Built using Symfony, PHP, SCSS, and VanillaJS, and hosted on AWS Elastic Beanstalk, the application delivers a secure and scalable solution for organizations' HR management needs.
+
 
 ---
 
@@ -32,11 +69,20 @@ export { Layout as default } from '@/components/Layout'
 
 ## Marketing Dashboard {{ date: '2023-03-17T00:00Z' }}
 
+This web application enables small businesses to launch large-scale texting and email marketing campaigns. Users can create, manage, and track campaign performance through custom tracking links that measure customer conversion rates.
+The platform provides various templates and tools to help businesses create effective marketing materials. The application integrates with Twilio API for text message delivery and AWS SES for email distribution.
+
+Built using Symfony, PHP, SCSS, and VanillaJS, the application is hosted on AWS Elastic Beanstalk and utilizes RDS, S3, and CloudWatch services for robust performance and monitoring.
+
 ---
 
 ![]( src/images/dark-mode.png)
 
 ## Impressa Doors  {{ date: '2023-03-06T00:00Z' }}
+
+Impressa Doors is an e-commerce website built on Shopify that sells overstock doors to other door companies. The site features a clean, custom theme with product photography to effectively showcase their door inventory. To streamline operations, the platform integrates with Webgility to automatically sync orders between the online store and QuickBooks for efficient order processing and fulfillment.
+
+Built on Shopify's platform with custom theme development and Webgility integration for seamless business operations.
 
 ---
 
@@ -44,14 +90,27 @@ export { Layout as default } from '@/components/Layout'
 
 ## Darpet Doors Inc.  {{ date: '2023-03-06T00:00Z' }}
 
+Darpet Doors Inc.'s website is built on the Shopify platform, serving as the company's digital showcase. The site features a customized theme and professional product photography to effectively display their extensive door and hardware collection. Visitors can browse through detailed product catalogs and specifications to explore Darpet's offerings.
+The website maintains a clean, professional design that reflects the company's commitment to quality while providing an informative experience for both residential and commercial clients.
+
+Built on Shopify's platform with custom theme development and professional product photography to create an engaging product showcase.
+
 ---
 
 ![]( src/images/dark-mode.png)
 
 ## HydroPonics  {{ date: '2023-03-06T00:00Z' }}
 
+The Hydroponics Control System is a custom-built solution that automates and monitors indoor plant cultivation. The system integrates Arduino microcontrollers with various sensors to track essential growing conditions including water pH levels, temperature, water height, and light exposure. A key feature is the automated water pump scheduling system that ensures optimal plant aeration.
+
+Built using Arduino for hardware control and sensor integration, the system includes a web interface developed with React. The application provides real-time monitoring, customizable scheduling, and data visualization of environmental conditions.
+
 ---
 
 ![]( src/images/dark-mode.png)
 
 ## Capture Cam {{ date: '2023-03-06T00:00Z' }}
+
+Capture Cam is a Python application built with Tkinter that uses computer vision to detect and log license plates for law enforcement purposes. The system captures images of passing vehicles through a Raspberry Pi camera and processes them using Google Vision ML for license plate detection. When a plate matches against an SQLite database of vehicles reported in crimes, the system stores the image, logs the match and alerts the user.
+
+Built using Python and Tkinter for the user interface, with SQLite for data storage, the application integrates with Google Vision ML and runs on Raspberry Pi hardware. The system provides a simple desktop interface for monitoring captures and managing the plate database.
