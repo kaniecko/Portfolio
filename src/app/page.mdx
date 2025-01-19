@@ -1,12 +1,105 @@
 import { SparkleIcon } from '@/components/SparkleIcon'
+import ProjectImageCarousel from '@/components/ProjectImageCarousel'
 export { Layout as default } from '@/components/Layout'
+import tcp1 from '@/images/Project-Images/TalentCraftPortal/page1.png'
+import tcp2 from '@/images/Project-Images/TalentCraftPortal/page2.png'
+import tcp3 from '@/images/Project-Images/TalentCraftPortal/page3.png'
+import tcp4 from '@/images/Project-Images/TalentCraftPortal/page4.png'
+import tcp5 from '@/images/Project-Images/TalentCraftPortal/page5.png'
+import tcp6 from '@/images/Project-Images/TalentCraftPortal/page6.png'
+import tcp7 from '@/images/Project-Images/TalentCraftPortal/page7.png'
+import tcp8 from '@/images/Project-Images/TalentCraftPortal/page8.png'
+import tcp9 from '@/images/Project-Images/TalentCraftPortal/page9.png'
 
+import tcw1 from '@/images/Project-Images/TalentCraftWebsite/homepage.png'
+import tcw2 from '@/images/Project-Images/TalentCraftWebsite/page2.png'
+import tcw3 from '@/images/Project-Images/TalentCraftWebsite/page3.png'
+import tcw4 from '@/images/Project-Images/TalentCraftWebsite/page4.png'
+
+import tcjt1 from '@/images/Project-Images/TalentCraftJobTracker/homepage.png'
+import tcjt2 from '@/images/Project-Images/TalentCraftJobTracker/page1.png'
+
+import c4hris1 from '@/images/Project-Images/C4/page1.png'
+import c4hris2 from '@/images/Project-Images/C4/page2.png'
+import c4hris3 from '@/images/Project-Images/C4/page3.png'
+import c4hris4 from '@/images/Project-Images/C4/page4.png'
+import c4hris5 from '@/images/Project-Images/C4/page5.png'
+import c4hris6 from '@/images/Project-Images/C4/page6.png'
+import c4hris7 from '@/images/Project-Images/C4/page7.png'
+import c4hris8 from '@/images/Project-Images/C4/page8.png'
+import c4hris9 from '@/images/Project-Images/C4/page9.png'
+import c4hris10 from '@/images/Project-Images/C4/login.png'
+
+import mkt1 from '@/images/Project-Images/MarketingDashboard/homepage.png'
+import mkt2 from '@/images/Project-Images/MarketingDashboard/page1.png'
+
+import tennis27_1 from '@/images/Project-Images/Tennis27/homepage.png'
+import tennis27_2 from '@/images/Project-Images/Tennis27/nav.png'
+import tennis27_4 from '@/images/Project-Images/Tennis27/page2.png'
+import tennis27_5 from '@/images/Project-Images/Tennis27/page3.png'
+import tennis27_6 from '@/images/Project-Images/Tennis27/page4.png'
+
+import pf1 from '@/images/Project-Images/PoradecFarms/homepage.png'
+import pf3 from '@/images/Project-Images/PoradecFarms/page2.png'
+import pf4 from '@/images/Project-Images/PoradecFarms/page3.png'
+import pf5 from '@/images/Project-Images/PoradecFarms/page4.png'
+
+import im1 from '@/images/Project-Images/ImpressaDoors/homepage.png'
+import im2 from '@/images/Project-Images/ImpressaDoors/page2.png'
+import im3 from '@/images/Project-Images/ImpressaDoors/page3.png'
+import im4 from '@/images/Project-Images/ImpressaDoors/page4.png'
+
+import hp1 from '@/images/Project-Images/HydroPonics/homepage.jpg'
+import hp2 from '@/images/Project-Images/HydroPonics/page2.jpg'
+import hp3 from '@/images/Project-Images/HydroPonics/page3.jpg'
+import hp4 from '@/images/Project-Images/HydroPonics/page4.jpg'
 
 ---
 
-![]( src/images/commit-suggestions.png)
+
+<ProjectImageCarousel
+    images={[
+        {
+            src: tcp1,
+            alt: "home"
+        },
+        {
+            src: tcp2,
+            alt: "page1"
+        },
+        {
+            src: tcp3,
+            alt: "page2"
+        },
+        {
+            src: tcp4,
+            alt: "page3"
+        },
+        {
+            src: tcp5,
+            alt: "page4"
+        },
+        {
+            src: tcp6,
+            alt: "page5"
+        },
+        {
+            src: tcp7,
+            alt: "page6"
+        },
+        {
+            src: tcp8,
+            alt: "page7"
+        },
+        {
+            src: tcp9,
+            alt: "page8"
+        }
+    ]}
+/>
 
 ## TalentCraft Portal
+
 
 The TalentCraft Portal is a web application that streamlines and organizes the TalentCraft team's daily operations. It integrates with multiple platforms including Bullhorn Staffing software, BusinessCentral, and LightCast data, while also utilizing their in-house scraper (TalentCraft Worker) for job postings and articles.
 
@@ -16,9 +109,9 @@ Built using the Symfony Framework, PHP, VanillaJS, Twig, Doctrine ORM, and Tailw
 
 ---
 
-![]( src/images/commit-suggestions.png)
+![]( src/images/Project-Images/TalentCraftWorker/image.png)
 
-## Talent Craft Worker Server
+## TalentCraft Worker Server
 
 The TalentCraft Worker is a custom web scraper that collects job postings from various recruitment sites and industry websites. It uses RSS feeds to gather data about upcoming construction and infrastructure projects across the United States.
 This system helps TalentCraft grow their recruiting business by spotting new opportunities and market trends. The worker organizes all the collected data, helping the team find potential clients and candidates for emerging projects. Through regular
@@ -29,9 +122,28 @@ The system uses AWS services like EC2, RDS and CloudWatch to ensure reliable ope
 
 ---
 
-![]( src/images/commit-suggestions.png)
+<ProjectImageCarousel
+    images={[
+        {
+            src: tcw1,
+            alt: "home"
+        },
+        {
+            src: tcw2,
+            alt: "page1"
+        },
+        {
+            src: tcw3,
+            alt: "page2"
+        },
+        {
+            src: tcw4,
+            alt: "page3"
+        }
+    ]}
+/>
 
-## Talent Craft Website
+## TalentCraft Website
 
 The TalentCraft website is a custom-built platform that serves as the public face of the TalentCraft recruiting company. It provides detailed information about the company, its services, and its team, while featuring a
 comprehensive job board for potential candidates. Job seekers can also submit their resumes directly through the platform to be included in TalentCraft's talent pool for future opportunities. The website showcases the company's
@@ -41,9 +153,20 @@ Built using Next.js, TypeScript, and Tailwind CSS, and hosted on AWS Elastic Bea
 
 ---
 
-![]( src/images/commit-suggestions.png)
+<ProjectImageCarousel
+    images={[
+        {
+            src: tcjt1,
+            alt: "home"
+        },
+        {
+            src: tcjt2,
+            alt: "page1"
+        }
+    ]}
+/>
 
-## Talent Craft Job Tracker
+## TalentCraft Job Tracker
 
 The TalentCraft Job Tracker is a web application that is designed to help sell the TalentCraft recruiting services to potential clients. It provides a comprehensive overview of the job market, including the number of open positions, the number of candidates, and the average time to fill a position. The application also includes a variety of charts and graphs to help users visualize the data.
 The site features a map of hotspots that the TalentCraft team has identified as high-demand areas for technology, life sciences and engineering jobs. Users can also filter the data by location, industry, and job title to get a more detailed view of the job market.
@@ -52,9 +175,53 @@ Created using Next.js, TypeScript, and Tailwind CSS, and hosted on AWS Elastic B
 
 ---
 
-![]( src/images/commit-suggestions.png)
+<ProjectImageCarousel
+    images={[
+        {
+            src: c4hris1,
+            alt: "home"
+        },
+        {
+            src: c4hris2,
+            alt: "page1"
+        },
+        {
+            src: c4hris3,
+            alt: "page2"
+        },
+        {
+            src: c4hris4,
+            alt: "page3"
+        },
+        {
+            src: c4hris5,
+            alt: "page4"
+        },
+        {
+            src: c4hris6,
+            alt: "page5"
+        },
+        {
+            src: c4hris7,
+            alt: "page6"
+        },
+        {
+            src: c4hris8,
+            alt: "page7"
+        },
+        {
+            src: c4hris9,
+            alt: "page8"
+        },
+        {
+            src: c4hris10,
+            alt: "login"
+        }
+    ]}
+/>
 
-## C4 Human Resources Information System {{ date: '2023-05-06T00:00Z' }}
+
+## C4 Human Resources Information System
 
 The C4 Human Resources Information System (HRIS) is a web application that provides a comprehensive solution for managing employee data, payroll, and benefits. The system streamlines HR processes by managing all aspects of the employee lifecycle, from
 recruitment to retirement. Key features include applicant tracking, onboarding, performance management, and a self-service portal where employees can access their information and manage benefits. The platform also includes tools for creating questionnaires,
@@ -65,9 +232,20 @@ Built using Symfony, PHP, SCSS, and VanillaJS, and hosted on AWS Elastic Beansta
 
 ---
 
-![]( src/images/configuration-files.png)
+<ProjectImageCarousel
+    images={[
+        {
+            src: mkt1,
+            alt: "home"
+        },
+        {
+            src: mkt2,
+            alt: "page1"
+        }
+    ]}
+/>
 
-## Marketing Dashboard {{ date: '2023-03-17T00:00Z' }}
+## Marketing Dashboard
 
 This web application enables small businesses to launch large-scale texting and email marketing campaigns. Users can create, manage, and track campaign performance through custom tracking links that measure customer conversion rates.
 The platform provides various templates and tools to help businesses create effective marketing materials. The application integrates with Twilio API for text message delivery and AWS SES for email distribution.
@@ -76,9 +254,91 @@ Built using Symfony, PHP, SCSS, and VanillaJS, the application is hosted on AWS 
 
 ---
 
-![]( src/images/dark-mode.png)
+<ProjectImageCarousel
+    images={[
+        {
+            src: tennis27_1,
+            alt: "home"
+        },
+        {
+            src: tennis27_2,
+            alt: "nav"
+        },
+        {
+            src: tennis27_4,
+            alt: "page1"
+        },
+        {
+            src: tennis27_5,
+            alt: "page2"
+        },
+        {
+            src: tennis27_6,
+            alt: "page3"
+        }
+    ]}
+/>
 
-## Impressa Doors  {{ date: '2023-03-06T00:00Z' }}
+## Tennis27 Website
+
+Tennis27 is a premier tennis specialty retailer that brings their brick-and-mortar expertise to the digital space. Their custom-built website serves as a digital storefront showcasing their extensive collection of tennis equipment, apparel, and accessories. The platform features an intuitive product catalog with detailed specifications and expert equipment guides, making it easy for players to research gear before visiting their physical location.
+
+Built with Next.js, TypeScript, and Tailwind CSS, the website delivers a modern, responsive experience that reflects Tennis27's commitment to quality and service. The integration of these technologies ensures fast page loads, smooth navigation, and an adaptive design that works seamlessly across all devices.
+
+---
+
+<ProjectImageCarousel
+    images={[
+        {
+            src: pf1,
+            alt: "home"
+        },
+        {
+            src: pf3,
+            alt: "page1"
+        },
+        {
+            src: pf4,
+            alt: "page2"
+        },
+        {
+            src: pf5,
+            alt: "page3"
+        }
+    ]}
+/>
+
+
+## Poradec Farms
+
+Poradec Farms is the official website for an Albanian food brand. The website showcases their products, including a variety of Albanian grown vegetables and other food items. It features a clean, modern design with a focus on product photography to highlight the quality and authenticity of their offerings.
+
+Built on Shopify's platform expanding on an existing theme, the website showcases products with a focus on user experience and visual appeal.
+
+---
+
+<ProjectImageCarousel
+    images={[
+        {
+            src: im1,
+            alt: "home"
+        },
+        {
+            src: im2,
+            alt: "page1"
+        },
+        {
+            src: im3,
+            alt: "page2"
+        },
+        {
+            src: im4,
+            alt: "page3"
+        }
+    ]}
+/>
+
+## Impressa Doors
 
 Impressa Doors is an e-commerce website built on Shopify that sells overstock doors to other door companies. The site features a clean, custom theme with product photography to effectively showcase their door inventory. To streamline operations, the platform integrates with Webgility to automatically sync orders between the online store and QuickBooks for efficient order processing and fulfillment.
 
@@ -86,9 +346,9 @@ Built on Shopify's platform with custom theme development and Webgility integrat
 
 ---
 
-![]( src/images/dark-mode.png)
+![]( src/images/Project-Images/Darpet/homepage.png)
 
-## Darpet Doors Inc.  {{ date: '2023-03-06T00:00Z' }}
+## Darpet Doors Inc.
 
 Darpet Doors Inc.'s website is built on the Shopify platform, serving as the company's digital showcase. The site features a customized theme and professional product photography to effectively display their extensive door and hardware collection. Visitors can browse through detailed product catalogs and specifications to explore Darpet's offerings.
 The website maintains a clean, professional design that reflects the company's commitment to quality while providing an informative experience for both residential and commercial clients.
@@ -97,9 +357,29 @@ Built on Shopify's platform with custom theme development and professional produ
 
 ---
 
-![]( src/images/dark-mode.png)
+<ProjectImageCarousel
+    images={[
+        {
+            src: hp1,
+            alt: "home"
+        },
+        {
+            src: hp2,
+            alt: "page1"
+        },
+        {
+            src: hp3,
+            alt: "page2"
+        },
+        {
+            src: hp4,
+            alt: "page3"
+        }
+    ]}
+/>
 
-## HydroPonics  {{ date: '2023-03-06T00:00Z' }}
+
+## HydroPonics
 
 The Hydroponics Control System is a custom-built solution that automates and monitors indoor plant cultivation. The system integrates Arduino microcontrollers with various sensors to track essential growing conditions including water pH levels, temperature, water height, and light exposure. A key feature is the automated water pump scheduling system that ensures optimal plant aeration.
 
@@ -107,9 +387,9 @@ Built using Arduino for hardware control and sensor integration, the system incl
 
 ---
 
-![]( src/images/dark-mode.png)
+![]( src/images/Project-Images/CaptureCam/image.jpg)
 
-## Capture Cam {{ date: '2023-03-06T00:00Z' }}
+## Capture Cam
 
 Capture Cam is a Python application that uses computer vision to detect and log license plates for law enforcement purposes. The system captures images of passing vehicles through a Raspberry Pi camera and processes them using Google Vision ML for license plate detection. When a plate matches against an SQLite database of vehicles reported in crimes, the system stores the image, logs the match and alerts the user.
 
