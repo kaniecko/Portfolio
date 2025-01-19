@@ -6,6 +6,8 @@ import Link from 'next/link'
 import clsx from 'clsx'
 import Spline from '@splinetool/react-spline/next'
 import ProjectImageCarousel from '@/components/ProjectImageCarousel'
+import ProjectLogo from '@/components/ProjectLogo'
+
 
 export const a = Link
 
@@ -22,22 +24,6 @@ export const img = function Img(props) {
                 {...props}
             />
             <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10 dark:ring-white/10" />
-        </div>
-    )
-}
-
-function ProjectLogo({ logoSrc }) {
-    if (!logoSrc) return null;
-
-    return (
-        <div className="inline-flex h-6 w-6 xl:h-8 xl:w-8">
-            <Image
-                src={logoSrc}
-                alt="Project Logo"
-                width={32}
-                height={32}
-                className="h-full w-full object-contain"
-            />
         </div>
     )
 }
@@ -80,17 +66,8 @@ function ArticleHeader({ id, logo, splineScene }) {
                         <ProjectLogo logoSrc={logo} />
                     </Link>
                 )}
-                <div className="h-[0.0625rem] w-3.5 bg-gray-400 lg:-mr-3.5 xl:mr-0 xl:bg-gray-300" />
+                {/*<div className="h-[0.0625rem] w-3.5 bg-gray-400 lg:-mr-3.5 xl:mr-0 xl:bg-gray-300" /> */}
             </div>
-            <ContentWrapper>
-                <div className="flex">
-                    {logo && (
-                        <Link href={`#${id}`} className="inline-flex">
-                            <ProjectLogo logoSrc={logo} />
-                        </Link>
-                    )}
-                </div>
-            </ContentWrapper>
         </header>
     )
 }

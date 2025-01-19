@@ -54,7 +54,7 @@ const ProjectImageCarousel = ({ images }) => {
     };
 
     return (
-        <div className="relative mt-8 overflow-hidden rounded-xl bg-gray-50 dark:bg-gray-900 [&+*]:mt-8">
+        <div className="relative mt-8 overflow-hidden rounded-xl bg-gray-50 dark:bg-[#18181b] [&+*]:mt-8">
             <div className="relative h-96">
                 <Image
                     src={images[currentIndex].src}
