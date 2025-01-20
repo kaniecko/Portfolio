@@ -4,6 +4,8 @@ import clsx from 'clsx'
 
 import { Providers } from 'src/app/providers'
 
+import VisitorTracker from "@/components/VisitorTracker";
+
 import 'src/styles/tailwind.css'
 
 const inter = Inter({
@@ -38,6 +40,7 @@ export default function RootLayout({ children }) {
       suppressHydrationWarning
     >
       <body className="flex min-h-full flex-col bg-white dark:bg-[#18181b] sm:w-full md:w-full">
+      <VisitorTracker />
         <Providers>{children}</Providers>
       </body>
     </html>
